@@ -1,4 +1,3 @@
-from ast import Try
 from bs4 import BeautifulSoup
 import requests
 from csv import writer
@@ -8,7 +7,7 @@ from lxml import etree as et
 from datetime import datetime
 
 header = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36"} #adding user agents to avoid detection
-base_url= "https://www.pararius.com/apartments/amsterdam/page-" #base url for the pages
+base_url= "https://www.pararius.com/apartments/rotterdam/page-" #base url for the pages
 pages_url=[]    #list to store the url of every page
 listing_url=[]  #list to store the url of every apartments
 
@@ -18,7 +17,7 @@ def get_dom(the_url):
     dom = et.HTML(str(soup))
     return dom
 
-for i in range (1,23): #generate all the pages url
+for i in range (1,21): #generate all the pages url
     page_url=base_url + str(i)
     pages_url.append(page_url) #append the page url to the list
 
@@ -264,9 +263,9 @@ def get_contact_details(dom):                   #get the contact details of the 
 def get_timestamp():
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-with open('apartments.csv','w',newline='') as f:
+with open('rotterdam_1.csv','w',newline='') as f:
     thewriter=writer(f)
-    heading=['URL','TITLE','LOCATION','PRICE PER MONTH','AREA IN m²','NUMBER OF ROOMS','INTERIOR','DESCRIPTION','OFFERED SINCE','AVAILABILITY','SPECIFICATION','UPKEEP STATUS','VOLUME','TYPE','CONSTRUCTION TYPE','CONSTRUCTION YEAR','LOCATION TYPE','NUMBER OF BEDROOMS','NUMBER OF BATHROOMS','NUMBER OF FLOORS','DETAILS OF BALCONY','DETAILS OF GARDEN','DETAILS OF STORAGE','DESCRIPTION OF STORAGE','GARAGE','CONTACT DETAILS','TIMESTAMP']
+    heading=['URL','TITLE','LOCATION','PRICE PER MONTH','AREA IN SQ METRE','NUMBER OF ROOMS','INTERIOR','DESCRIPTION','OFFERED SINCE','AVAILABILITY','SPECIFICATION','UPKEEP STATUS','VOLUME','TYPE','CONSTRUCTION TYPE','CONSTRUCTION YEAR','LOCATION TYPE','NUMBER OF BEDROOMS','NUMBER OF BATHROOMS','NUMBER OF FLOORS','DETAILS OF BALCONY','DETAILS OF GARDEN','DETAILS OF STORAGE','DESCRIPTION OF STORAGE','GARAGE','CONTACT DETAILS','TIMESTAMP']
     thewriter.writerow(heading)
     for list_url in listing_url: #get the each link from the listing_url
         listing_dom=get_dom(list_url)
