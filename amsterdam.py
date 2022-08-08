@@ -18,7 +18,7 @@ def get_dom(the_url):
     dom = et.HTML(str(soup))
     return dom
 
-for i in range (1,23): #generate all the pages url
+for i in range (1,20): #generate all the pages url
     page_url=base_url + str(i)
     pages_url.append(page_url) #append the page url to the list
 
@@ -216,7 +216,7 @@ def get_details_of_balcony(dom):                #get the details of the balcony 
 
 def get_details_of_garden(dom):                 #get the details of the garden of the listing
     try:                                        #try to get the details of the garden
-        garden=dom.xpath("listing-features__description listing-features__description--garden")[0]
+        garden=dom.xpath("//dd[@class='listing-features__description listing-features__description--garden']/span/text()")[0]
         print(garden)
     except Exception as e:                      #if the details of the garden is not found, print the error message
         garden="Details of garden is not available"
@@ -262,9 +262,9 @@ def get_contact_details(dom):                   #get the contact details of the 
     return contact_details
 
 def get_timestamp():
-    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    return datetime.now().strftime("%Y-%m-%d")
 
-with open('amsterdam_1.csv','w',newline='') as f:
+with open('amsterdam_6.csv','w',newline='') as f:
     thewriter=writer(f)
     heading=['URL','TITLE','LOCATION','PRICE PER MONTH','AREA IN m²','NUMBER OF ROOMS','INTERIOR','DESCRIPTION','OFFERED SINCE','AVAILABILITY','SPECIFICATION','UPKEEP STATUS','VOLUME','TYPE','CONSTRUCTION TYPE','CONSTRUCTION YEAR','LOCATION TYPE','NUMBER OF BEDROOMS','NUMBER OF BATHROOMS','NUMBER OF FLOORS','DETAILS OF BALCONY','DETAILS OF GARDEN','DETAILS OF STORAGE','DESCRIPTION OF STORAGE','GARAGE','CONTACT DETAILS','TIMESTAMP']
     thewriter.writerow(heading)

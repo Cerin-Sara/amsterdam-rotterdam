@@ -215,7 +215,7 @@ def get_details_of_balcony(dom):                #get the details of the balcony 
 
 def get_details_of_garden(dom):                 #get the details of the garden of the listing
     try:                                        #try to get the details of the garden
-        garden=dom.xpath("listing-features__description listing-features__description--garden")[0]
+        garden=dom.xpath("//dd[@class='listing-features__description listing-features__description--garden']/span/text()")[0]
         print(garden)
     except Exception as e:                      #if the details of the garden is not found, print the error message
         garden="Details of garden is not available"
@@ -263,7 +263,7 @@ def get_contact_details(dom):                   #get the contact details of the 
 def get_timestamp():
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-with open('rotterdam_1.csv','w',newline='') as f:
+with open('rotterdam_6.csv','w',newline='') as f:
     thewriter=writer(f)
     heading=['URL','TITLE','LOCATION','PRICE PER MONTH','AREA IN SQ METRE','NUMBER OF ROOMS','INTERIOR','DESCRIPTION','OFFERED SINCE','AVAILABILITY','SPECIFICATION','UPKEEP STATUS','VOLUME','TYPE','CONSTRUCTION TYPE','CONSTRUCTION YEAR','LOCATION TYPE','NUMBER OF BEDROOMS','NUMBER OF BATHROOMS','NUMBER OF FLOORS','DETAILS OF BALCONY','DETAILS OF GARDEN','DETAILS OF STORAGE','DESCRIPTION OF STORAGE','GARAGE','CONTACT DETAILS','TIMESTAMP']
     thewriter.writerow(heading)
