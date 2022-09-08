@@ -261,9 +261,9 @@ def get_contact_details(dom):                   #get the contact details of the 
     return contact_details
 
 def get_timestamp():
-    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    return datetime.now().strftime("%Y-%m-%d")
 
-with open('rotterdam_6.csv','w',newline='') as f:
+with open('rotterdam_32.csv','w',newline='') as f:
     thewriter=writer(f)
     heading=['URL','TITLE','LOCATION','PRICE PER MONTH','AREA IN SQ METRE','NUMBER OF ROOMS','INTERIOR','DESCRIPTION','OFFERED SINCE','AVAILABILITY','SPECIFICATION','UPKEEP STATUS','VOLUME','TYPE','CONSTRUCTION TYPE','CONSTRUCTION YEAR','LOCATION TYPE','NUMBER OF BEDROOMS','NUMBER OF BATHROOMS','NUMBER OF FLOORS','DETAILS OF BALCONY','DETAILS OF GARDEN','DETAILS OF STORAGE','DESCRIPTION OF STORAGE','GARAGE','CONTACT DETAILS','TIMESTAMP']
     thewriter.writerow(heading)
