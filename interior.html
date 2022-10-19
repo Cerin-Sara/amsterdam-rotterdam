@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.3.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div class="bk-root" id="4b5f88b3-20c1-4b4e-ba6b-56ebfd27cc4f" data-root-id="1002"></div>
+  
+    <script type="application/json" id="1207">
+      {"2e4ed9ca-3c48-4ec9-bae8-a98942a944aa":{"defs":[],"roots":{"references":[{"attributes":{},"id":"1061","type":"UnionRenderers"},{"attributes":{"axis":{"id":"1016"},"coordinates":null,"dimension":1,"grid_line_color":null,"group":null,"ticker":null},"id":"1019","type":"Grid"},{"attributes":{"below":[{"id":"1013"}],"center":[{"id":"1015"},{"id":"1019"},{"id":"1043"}],"height":500,"left":[{"id":"1016"}],"outline_line_color":null,"renderers":[{"id":"1032"},{"id":"1050"}],"right":[{"id":"1043"}],"title":{"id":"1003"},"toolbar":{"id":"1021"},"toolbar_location":null,"x_range":{"id":"1005"},"x_scale":{"id":"1009"},"y_range":{"id":"1007"},"y_scale":{"id":"1011"}},"id":"1002","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1017","type":"BasicTicker"},{"attributes":{"fields":["FURNISHED"]},"id":"1024","type":"Stack"},{"attributes":{"source":{"id":"1027"}},"id":"1033","type":"CDSView"},{"attributes":{"tools":[{"id":"1020"}]},"id":"1021","type":"Toolbar"},{"attributes":{"callback":null,"tooltips":"$name @location: @$name"},"id":"1020","type":"HoverTool"},{"attributes":{},"id":"1041","type":"UnionRenderers"},{"attributes":{"coordinates":null,"data_source":{"id":"1027"},"glyph":{"id":"1029"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1031"},"name":"FURNISHED","nonselection_glyph":{"id":"1030"},"view":{"id":"1033"}},"id":"1032","type":"GlyphRenderer"},{"attributes":{"coordinates":null,"data_source":{"id":"1045"},"glyph":{"id":"1047"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1049"},"name":"NOT FURNISHED","nonselection_glyph":{"id":"1048"},"view":{"id":"1051"}},"id":"1050","type":"GlyphRenderer"},{"attributes":{"fields":["FURNISHED","NOT FURNISHED"]},"id":"1026","type":"Stack"},{"attributes":{"data":{"FURNISHED":[484,472],"NOT FURNISHED":[484,76],"location":["Amsterdam","Rotterdam"]},"selected":{"id":"1062"},"selection_policy":{"id":"1061"}},"id":"1045","type":"ColumnDataSource"},{"attributes":{"data":{"FURNISHED":[484,472],"NOT FURNISHED":[484,76],"location":["Amsterdam","Rotterdam"]},"selected":{"id":"1042"},"selection_policy":{"id":"1041"}},"id":"1027","type":"ColumnDataSource"},{"attributes":{"bottom":{"expr":{"id":"1023"}},"fill_color":{"value":"#FFC4C4"},"hatch_color":{"value":"#FFC4C4"},"line_color":{"value":"#FFC4C4"},"top":{"expr":{"id":"1024"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1029","type":"VBar"},{"attributes":{"bottom":{"expr":{"id":"1025"}},"fill_color":{"value":"#718dbf"},"hatch_color":{"value":"#718dbf"},"line_color":{"value":"#718dbf"},"top":{"expr":{"id":"1026"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1047","type":"VBar"},{"attributes":{},"id":"1037","type":"AllLabels"},{"attributes":{"fields":[]},"id":"1023","type":"Stack"},{"attributes":{"factors":["Amsterdam","Rotterdam"],"range_padding":0.1},"id":"1005","type":"FactorRange"},{"attributes":{"label":{"value":"FURNISHED"},"renderers":[{"id":"1032"}]},"id":"1044","type":"LegendItem"},{"attributes":{"bottom":{"expr":{"id":"1023"}},"fill_alpha":{"value":0.2},"fill_color":{"value":"#FFC4C4"},"hatch_alpha":{"value":0.2},"hatch_color":{"value":"#FFC4C4"},"line_alpha":{"value":0.2},"line_color":{"value":"#FFC4C4"},"top":{"expr":{"id":"1024"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1031","type":"VBar"},{"attributes":{"bottom":{"expr":{"id":"1025"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#718dbf"},"hatch_alpha":{"value":0.1},"hatch_color":{"value":"#718dbf"},"line_alpha":{"value":0.1},"line_color":{"value":"#718dbf"},"top":{"expr":{"id":"1026"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1048","type":"VBar"},{"attributes":{"bottom":{"expr":{"id":"1023"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#FFC4C4"},"hatch_alpha":{"value":0.1},"hatch_color":{"value":"#FFC4C4"},"line_alpha":{"value":0.1},"line_color":{"value":"#FFC4C4"},"top":{"expr":{"id":"1024"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1030","type":"VBar"},{"attributes":{"bottom":{"expr":{"id":"1025"}},"fill_alpha":{"value":0.2},"fill_color":{"value":"#718dbf"},"hatch_alpha":{"value":0.2},"hatch_color":{"value":"#718dbf"},"line_alpha":{"value":0.2},"line_color":{"value":"#718dbf"},"top":{"expr":{"id":"1026"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1049","type":"VBar"},{"attributes":{},"id":"1042","type":"Selection"},{"attributes":{"start":0},"id":"1007","type":"DataRange1d"},{"attributes":{},"id":"1036","type":"BasicTickFormatter"},{"attributes":{"coordinates":null,"group":null,"text":"Interior works details in AMSTERDAM and ROTTERDAM"},"id":"1003","type":"Title"},{"attributes":{"coordinates":null,"formatter":{"id":"1036"},"group":null,"major_label_policy":{"id":"1037"},"minor_tick_line_color":null,"ticker":{"id":"1017"}},"id":"1016","type":"LinearAxis"},{"attributes":{"axis":{"id":"1013"},"coordinates":null,"grid_line_color":null,"group":null,"ticker":null},"id":"1015","type":"Grid"},{"attributes":{"coordinates":null,"group":null,"items":[{"id":"1044"},{"id":"1063"}]},"id":"1043","type":"Legend"},{"attributes":{"source":{"id":"1045"}},"id":"1051","type":"CDSView"},{"attributes":{"fields":["FURNISHED"]},"id":"1025","type":"Stack"},{"attributes":{"coordinates":null,"formatter":{"id":"1039"},"group":null,"major_label_policy":{"id":"1040"},"minor_tick_line_color":null,"ticker":{"id":"1014"}},"id":"1013","type":"CategoricalAxis"},{"attributes":{"label":{"value":"NOT FURNISHED"},"renderers":[{"id":"1050"}]},"id":"1063","type":"LegendItem"},{"attributes":{},"id":"1011","type":"LinearScale"},{"attributes":{},"id":"1039","type":"CategoricalTickFormatter"},{"attributes":{},"id":"1014","type":"CategoricalTicker"},{"attributes":{},"id":"1009","type":"CategoricalScale"},{"attributes":{},"id":"1040","type":"AllLabels"},{"attributes":{},"id":"1062","type":"Selection"}],"root_ids":["1002"]},"title":"Bokeh Application","version":"2.4.3"}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('1207').textContent;
+              const render_items = [{"docid":"2e4ed9ca-3c48-4ec9-bae8-a98942a944aa","root_ids":["1002"],"roots":{"1002":"4b5f88b3-20c1-4b4e-ba6b-56ebfd27cc4f"}}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>

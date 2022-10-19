@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.3.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div class="bk-root" id="c5b02837-6cea-4496-9d89-12a2b4f6abac" data-root-id="1002"></div>
+  
+    <script type="application/json" id="1256">
+      {"8c8cff75-5b24-4766-a268-731f4d1e1a1e":{"defs":[],"roots":{"references":[{"attributes":{"coordinates":null,"data_source":{"id":"1066"},"glyph":{"id":"1068"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1070"},"name":"OTHERS","nonselection_glyph":{"id":"1069"},"view":{"id":"1072"}},"id":"1071","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"1013"}],"center":[{"id":"1015"},{"id":"1019"},{"id":"1045"}],"height":500,"left":[{"id":"1016"}],"outline_line_color":null,"renderers":[{"id":"1034"},{"id":"1052"},{"id":"1071"}],"right":[{"id":"1045"}],"title":{"id":"1003"},"toolbar":{"id":"1021"},"toolbar_location":null,"x_range":{"id":"1005"},"x_scale":{"id":"1009"},"y_range":{"id":"1007"},"y_scale":{"id":"1011"}},"id":"1002","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"1047"}},"id":"1053","type":"CDSView"},{"attributes":{},"id":"1042","type":"AllLabels"},{"attributes":{},"id":"1009","type":"CategoricalScale"},{"attributes":{"label":{"value":"HOUSES"},"renderers":[{"id":"1052"}]},"id":"1065","type":"LegendItem"},{"attributes":{"data":{"APARTMENTS":[536,542],"HOUSES":[36,44],"OTHERS":[4,11],"location":["Amsterdam","Rotterdam"]},"selected":{"id":"1085"},"selection_policy":{"id":"1084"}},"id":"1066","type":"ColumnDataSource"},{"attributes":{},"id":"1039","type":"AllLabels"},{"attributes":{"coordinates":null,"group":null,"text":"Building types in AMSTERDAM and ROTTERDAM"},"id":"1003","type":"Title"},{"attributes":{"data":{"APARTMENTS":[536,542],"HOUSES":[36,44],"OTHERS":[4,11],"location":["Amsterdam","Rotterdam"]},"selected":{"id":"1044"},"selection_policy":{"id":"1043"}},"id":"1029","type":"ColumnDataSource"},{"attributes":{},"id":"1064","type":"Selection"},{"attributes":{"bottom":{"expr":{"id":"1027"}},"fill_color":{"value":"#e84d60"},"hatch_color":{"value":"#e84d60"},"line_color":{"value":"#e84d60"},"top":{"expr":{"id":"1028"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1068","type":"VBar"},{"attributes":{"fields":[]},"id":"1023","type":"Stack"},{"attributes":{"bottom":{"expr":{"id":"1027"}},"fill_alpha":{"value":0.2},"fill_color":{"value":"#e84d60"},"hatch_alpha":{"value":0.2},"hatch_color":{"value":"#e84d60"},"line_alpha":{"value":0.2},"line_color":{"value":"#e84d60"},"top":{"expr":{"id":"1028"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1070","type":"VBar"},{"attributes":{},"id":"1063","type":"UnionRenderers"},{"attributes":{"tools":[{"id":"1020"}]},"id":"1021","type":"Toolbar"},{"attributes":{"bottom":{"expr":{"id":"1027"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#e84d60"},"hatch_alpha":{"value":0.1},"hatch_color":{"value":"#e84d60"},"line_alpha":{"value":0.1},"line_color":{"value":"#e84d60"},"top":{"expr":{"id":"1028"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1069","type":"VBar"},{"attributes":{"callback":null,"tooltips":"$name @location: @$name"},"id":"1020","type":"HoverTool"},{"attributes":{"bottom":{"expr":{"id":"1023"}},"fill_color":{"value":"#FFC4C4"},"hatch_color":{"value":"#FFC4C4"},"line_color":{"value":"#FFC4C4"},"top":{"expr":{"id":"1024"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1031","type":"VBar"},{"attributes":{},"id":"1043","type":"UnionRenderers"},{"attributes":{"bottom":{"expr":{"id":"1023"}},"fill_alpha":{"value":0.2},"fill_color":{"value":"#FFC4C4"},"hatch_alpha":{"value":0.2},"hatch_color":{"value":"#FFC4C4"},"line_alpha":{"value":0.2},"line_color":{"value":"#FFC4C4"},"top":{"expr":{"id":"1024"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1033","type":"VBar"},{"attributes":{"coordinates":null,"data_source":{"id":"1029"},"glyph":{"id":"1031"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1033"},"name":"APARTMENTS","nonselection_glyph":{"id":"1032"},"view":{"id":"1035"}},"id":"1034","type":"GlyphRenderer"},{"attributes":{},"id":"1014","type":"CategoricalTicker"},{"attributes":{"source":{"id":"1066"}},"id":"1072","type":"CDSView"},{"attributes":{"factors":["Amsterdam","Rotterdam"],"range_padding":0.1},"id":"1005","type":"FactorRange"},{"attributes":{"label":{"value":"OTHERS"},"renderers":[{"id":"1071"}]},"id":"1086","type":"LegendItem"},{"attributes":{"fields":["APARTMENTS","HOUSES"]},"id":"1026","type":"Stack"},{"attributes":{"coordinates":null,"group":null,"items":[{"id":"1046"},{"id":"1065"},{"id":"1086"}]},"id":"1045","type":"Legend"},{"attributes":{"bottom":{"expr":{"id":"1023"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#FFC4C4"},"hatch_alpha":{"value":0.1},"hatch_color":{"value":"#FFC4C4"},"line_alpha":{"value":0.1},"line_color":{"value":"#FFC4C4"},"top":{"expr":{"id":"1024"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1032","type":"VBar"},{"attributes":{},"id":"1044","type":"Selection"},{"attributes":{"coordinates":null,"data_source":{"id":"1047"},"glyph":{"id":"1049"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1051"},"name":"HOUSES","nonselection_glyph":{"id":"1050"},"view":{"id":"1053"}},"id":"1052","type":"GlyphRenderer"},{"attributes":{},"id":"1011","type":"LinearScale"},{"attributes":{"fields":["APARTMENTS","HOUSES"]},"id":"1027","type":"Stack"},{"attributes":{"axis":{"id":"1013"},"coordinates":null,"grid_line_color":null,"group":null,"ticker":null},"id":"1015","type":"Grid"},{"attributes":{},"id":"1084","type":"UnionRenderers"},{"attributes":{"fields":["APARTMENTS","HOUSES","OTHERS"]},"id":"1028","type":"Stack"},{"attributes":{"coordinates":null,"formatter":{"id":"1038"},"group":null,"major_label_policy":{"id":"1039"},"minor_tick_line_color":null,"ticker":{"id":"1017"}},"id":"1016","type":"LinearAxis"},{"attributes":{"source":{"id":"1029"}},"id":"1035","type":"CDSView"},{"attributes":{"data":{"APARTMENTS":[536,542],"HOUSES":[36,44],"OTHERS":[4,11],"location":["Amsterdam","Rotterdam"]},"selected":{"id":"1064"},"selection_policy":{"id":"1063"}},"id":"1047","type":"ColumnDataSource"},{"attributes":{"start":0},"id":"1007","type":"DataRange1d"},{"attributes":{},"id":"1085","type":"Selection"},{"attributes":{"coordinates":null,"formatter":{"id":"1041"},"group":null,"major_label_policy":{"id":"1042"},"minor_tick_line_color":null,"ticker":{"id":"1014"}},"id":"1013","type":"CategoricalAxis"},{"attributes":{"bottom":{"expr":{"id":"1025"}},"fill_color":{"value":"#718dbf"},"hatch_color":{"value":"#718dbf"},"line_color":{"value":"#718dbf"},"top":{"expr":{"id":"1026"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1049","type":"VBar"},{"attributes":{},"id":"1041","type":"CategoricalTickFormatter"},{"attributes":{"bottom":{"expr":{"id":"1025"}},"fill_alpha":{"value":0.2},"fill_color":{"value":"#718dbf"},"hatch_alpha":{"value":0.2},"hatch_color":{"value":"#718dbf"},"line_alpha":{"value":0.2},"line_color":{"value":"#718dbf"},"top":{"expr":{"id":"1026"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1051","type":"VBar"},{"attributes":{"axis":{"id":"1016"},"coordinates":null,"dimension":1,"grid_line_color":null,"group":null,"ticker":null},"id":"1019","type":"Grid"},{"attributes":{"fields":["APARTMENTS"]},"id":"1025","type":"Stack"},{"attributes":{},"id":"1017","type":"BasicTicker"},{"attributes":{"label":{"value":"APARTMENTS"},"renderers":[{"id":"1034"}]},"id":"1046","type":"LegendItem"},{"attributes":{"bottom":{"expr":{"id":"1025"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#718dbf"},"hatch_alpha":{"value":0.1},"hatch_color":{"value":"#718dbf"},"line_alpha":{"value":0.1},"line_color":{"value":"#718dbf"},"top":{"expr":{"id":"1026"}},"width":{"value":0.4},"x":{"field":"location"}},"id":"1050","type":"VBar"},{"attributes":{"fields":["APARTMENTS"]},"id":"1024","type":"Stack"},{"attributes":{},"id":"1038","type":"BasicTickFormatter"}],"root_ids":["1002"]},"title":"Bokeh Application","version":"2.4.3"}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('1256').textContent;
+              const render_items = [{"docid":"8c8cff75-5b24-4766-a268-731f4d1e1a1e","root_ids":["1002"],"roots":{"1002":"c5b02837-6cea-4496-9d89-12a2b4f6abac"}}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
